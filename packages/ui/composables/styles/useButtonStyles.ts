@@ -17,8 +17,16 @@ const buttonTv = tv({
     size: "normal",
   },
 });
-type ButtonVariant = VariantProps<typeof buttonTv>;
+type ButtonVariantTV = VariantProps<typeof buttonTv>;
+
+interface ButtonVariant {
+  color?: string;
+  size?: string;
+  class?: string;
+}
 
 export const useButtonStyles = (props?: ButtonVariant) => {
-  return computed(() => buttonTv({ color: props?.color, size: props?.size }));
+  return computed(() =>
+    buttonTv({ color: props?.color, size: props?.size, class: props?.class })
+  );
 };
