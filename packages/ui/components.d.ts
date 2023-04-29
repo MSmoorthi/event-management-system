@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     BaseButton: typeof import('./components/BaseButton.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SearchInput: typeof import('./components/SearchInput.vue')['default']
     TagInput: typeof import('./components/TagInput.vue')['default']
   }
 }

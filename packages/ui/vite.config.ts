@@ -10,7 +10,13 @@ import Components from "unplugin-vue-components/vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag === "iconify-icon",
+        },
+      },
+    }),
     vueJsx(),
     AutoImport({ dts: true, imports: ["vue"], dirs: ["composables/**"] }),
     Components({ dts: true, dirs: ["components"], deep: true }),
