@@ -1,7 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  interface BaseButtonProps {
+    color?: "primary" | "secondary";
+    size?: "normal" | "small";
+    class?: string;
+  }
+  const props = defineProps<BaseButtonProps>();
+  const emit = defineEmits<{ (e: "click"): void }>();
+  const buttonClasses = useButtonStyles({ color: props.color });
+</script>
 
 <template>
-  <button class="bg-red-600 text-white px-2 py-1 rounded-md">
+  <button @click="$emit('click')" :class="buttonClasses">
     <slot>Click Me!!!</slot>
   </button>
 </template>
