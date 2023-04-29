@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="mx-4 space-y-4 mt-4">
+  <div class="mx-4 space-y-4 mt-4 mb-12">
     <SearchInput v-model="searchQuery" />
     <div class="mx-4">
       <p class="text-4xl font-bold mx-auto w-fit">
@@ -33,7 +33,17 @@
       class="flex gap-4 items-center justify-between px-4 bg-[#CFE7F0] py-4 rounded-lg"
     >
       <p>Your Registrations</p>
-      <Icon name="tabler:chevron-down" class="w-6 h-6" />
+      <Icon name="tabler:chevron-down" class="w-6 h-6 -rotate-90" />
+    </div>
+    <div class="max-w-xl mx-auto">
+      <EventCard
+        title="Hackathon 2.0"
+        type="Hackathon"
+        organization="iNeuron"
+        :themes="['Web Development', 'Data Science']"
+        mode="offline"
+        start-date="29-04-2023"
+      />
     </div>
   </div>
 </template>
