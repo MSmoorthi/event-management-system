@@ -71,6 +71,12 @@ importers:
 
   packages/ui:
     dependencies:
+      tailwind-scrollbar-hide:
+        specifier: ^1.1.7
+        version: 1.1.7
+      tailwind-variants:
+        specifier: ^0.1.2
+        version: 0.1.2(tailwindcss@3.3.2)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -78,6 +84,12 @@ importers:
       '@histoire/plugin-vue':
         specifier: ^0.16.1
         version: 0.16.1(histoire@0.16.1)(vite@4.3.3)(vue@3.2.47)
+      '@iconify/vue':
+        specifier: ^4.1.1
+        version: 4.1.1(vue@3.2.47)
+      '@tailwindcss/forms':
+        specifier: ^0.5.3
+        version: 0.5.3(tailwindcss@3.3.2)
       '@types/node':
         specifier: ^18.14.2
         version: 18.14.2
