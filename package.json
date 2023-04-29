@@ -1,0 +1,16 @@
+{
+  "name": "alphanique",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web": "pnpm --filter @alphanique/web",
+    "ui": "pnpm --filter @alphanique/ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alphanique/ui": "workspace:^"
+  }
+}
