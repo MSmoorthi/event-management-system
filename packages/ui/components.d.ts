@@ -10,8 +10,13 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseButton: typeof import('./components/BaseButton.vue')['default']
+    BaseDropdown: typeof import('./components/BaseDropdown.vue')['default']
     EventCard: typeof import('./components/EventCard.vue')['default']
     FieldInput: typeof import('./components/FieldInput.vue')['default']
+    Listbox: typeof import('@headlessui/vue')['Listbox']
+    ListboxButton: typeof import('@headlessui/vue')['ListboxButton']
+    ListboxOption: typeof import('@headlessui/vue')['ListboxOption']
+    ListboxOptions: typeof import('@headlessui/vue')['ListboxOptions']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchInput: typeof import('./components/SearchInput.vue')['default']

@@ -74,6 +74,9 @@ importers:
 
   packages/ui:
     dependencies:
+      '@headlessui/vue':
+        specifier: ^1.7.13
+        version: 1.7.13(vue@3.2.47)
       iconify-icon:
         specifier: ^1.0.7
         version: 1.0.7
@@ -741,6 +744,15 @@ packages:
     dependencies:
       '@hapi/hoek': 9.3.0
     dev: true
+
+  /@headlessui/vue@1.7.13(vue@3.2.47):
+    resolution: {integrity: sha512-obG5TdPdBDfs+jiA1mY29LPFqyJl93Q90EL86ontfRe1B6XvbjPkx+x1aAC5DA18bXbb0Juni1ayDbXo0w1u0A==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.47
+    dev: false
 
   /@histoire/app@0.16.1(vite@4.3.3):
     resolution: {integrity: sha512-13komnhVk1Pk0wMmkJKDPWT8RKpA5HfAbeeXSHAq29pvFP9Faq+dAa62g1wqOpoyJD5C7SkI0OPI3eJwJHgTiQ==}
