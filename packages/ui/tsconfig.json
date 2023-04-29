@@ -3,9 +3,10 @@
   "include": [
     "env.d.ts",
     "nuxt.ts",
+    "*.d.ts",
     "components/**/*",
     "components/**/*.vue",
-    "composables/**/*.vue",
+    "composables/**/*",
     "stories/**/*.vue"
   ],
   "compilerOptions": {
