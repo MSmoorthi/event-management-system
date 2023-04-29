@@ -11,5 +11,13 @@ export default defineNuxtModule({
         // prefix: 'awesome', // this could be used to assign a prefix to the components
       });
     },
+    "imports:dirs": (dirs) => {
+      // Add ./components dir to the list
+      dirs.push(
+        // @ts-ignore
+        fileURLToPath(new URL("./composables/**", import.meta.url))
+        // prefix: 'awesome', // this could be used to assign a prefix to the components
+      );
+    },
   },
 });
