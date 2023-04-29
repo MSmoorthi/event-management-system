@@ -6,7 +6,10 @@
   }
   const props = defineProps<BaseButtonProps>();
   const emit = defineEmits<{ (e: "click"): void }>();
-  const buttonClasses = useButtonStyles({ color: props.color });
+  const buttonClasses = useButtonStyles({
+    color: props.color,
+    size: props.size,
+  });
 </script>
 
 <template>

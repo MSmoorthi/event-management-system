@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./node_modules/@alphanique/ui/components/**/*.{js,vue,ts}",
+    "./node_modules/@alphanique/ui/composables/**/*.{js,vue,ts}",
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",

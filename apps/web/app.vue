@@ -1,5 +1,8 @@
+<script setup lang="ts">
+  import "iconify-icon";
+</script>
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
