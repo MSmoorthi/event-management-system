@@ -56,7 +56,9 @@
       <TipTap />
     </div>
     <div class="w-1/2 mx-auto my-4">
-      <BaseButton class="w-full">Next</BaseButton>
+      <BaseButton @click="navigateTo('/registration-details/')" class="w-full"
+        >Next</BaseButton
+      >
     </div>
   </div>
 </template>
