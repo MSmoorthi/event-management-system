@@ -34,4 +34,10 @@ export default defineNuxtConfig({
       baseURL: "https://res.cloudinary.com/dxuzmgp20/image/upload/",
     },
   },
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag === "iconify-icon",
+    },
+  },
 });
