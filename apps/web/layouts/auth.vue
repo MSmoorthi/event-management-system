@@ -6,5 +6,7 @@
     src="~/assets/images/auth.png"
     class="block mx-auto max-h-[50vh] object-contain w-full"
   />
-  <slot />
+  <div class="mx-4">
+    <slot />
+  </div>
 </template>

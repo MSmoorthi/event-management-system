@@ -36,5 +36,11 @@
     <div class="w-1/2 mx-auto">
       <BaseButton @click="handleSignUp" class="w-full">Sign Up</BaseButton>
     </div>
+    <p class="text-center">
+      Existing User?
+      <NuxtLink class="text-blue-800 underline" to="/auth/sign-in">
+        Sign In</NuxtLink
+      >
+    </p>
   </div>
 </template>

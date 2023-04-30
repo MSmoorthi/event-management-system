@@ -12,8 +12,15 @@
 </script>
 
 <template>
-  <header class="flex gap-4 px-8 py-2">
-    <h1 class="flex-grow text-2xl font-bold">EventSpark</h1>
+  <header class="flex gap-4 justify-between px-4 py-2">
+    <h1 class="flex-grow text-2xl font-bold max-w-fit">EventSpark</h1>
+    <nav class="flex gap-1 mx-auto flex-wrap items-center justify-center w-fit">
+      <NuxtLink to="/">Home</NuxtLink>
+      <NuxtLink to="/events/">Events</NuxtLink>
+      <NuxtLink v-if="isAuthenticated" to="/organise-events/"
+        >Organize</NuxtLink
+      >
+    </nav>
     <BaseButton
       v-if="isAuthenticated"
       @click="logout"
