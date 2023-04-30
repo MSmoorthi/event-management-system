@@ -3,6 +3,8 @@ EventSpark is an all-in-one event management platform that allows event organise
 user-friendly interface that enables organisers to customise event pages, sell tickets, track attendee registrations, and manage event logistics. EventSpark also 
 provides a seamless experience for attendees to search, register, and access event details.
 
+> Deployed at [Netlify](https://event-management-system-ineuron.netlify.app/)
+
 ## Features
 - Event creation and customisation
 - Ticketing and payment processing
@@ -21,6 +23,20 @@ You can access the Figma file for EventSpark [Figma File link](https://www.figma
 - Effective event promotion tools, including social media and email marketing campaigns
 - Comprehensive analytics and reporting features for organisers
 - A mobile-optimised platform for easy access to event details and communication with organisers on the go
+
+## Tech Stack
+- Nuxt3 / Vue3
+- tailwindcss
+- supabase
+- TipTap
+- HeadlessUi
+
+## Usage
+```bash
+> git clone https://github.com/alphanique/event-management-system
+> pnpm i
+> pnpm web dev
+```
 
 ## Contributors
 - Naveen G
