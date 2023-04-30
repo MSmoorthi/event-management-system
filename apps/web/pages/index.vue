@@ -24,7 +24,9 @@
       </p>
     </section>
     <header class="text-4xl font-bold mx-auto">Explore event</header>
-    <div class="grid grid-cols-2 justify-center align-middle gap-4">
+    <div
+      class="grid grid-cols-2 max-w-xl mx-auto justify-center align-middle gap-4"
+    >
       <img src="assets/images/student.png" class="w-full" />
       <img src="assets/images/workers.png" class="w-full" />
     </div>

@@ -3,6 +3,7 @@
 export default defineNuxtConfig({
   devtools: true,
   modules: [
+    "@nuxtjs/supabase",
     "@alphanique/ui/nuxt",
     "@nuxt/image-edge",
     "@nuxt/image-edge",
@@ -13,6 +14,8 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-typed-router",
   ],
+
+  imports: { dirs: ["store/**"] },
 
   css: ["~/assets/css/main.css"],
   postcss: {
