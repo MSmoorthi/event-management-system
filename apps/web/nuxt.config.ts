@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: true,
   modules: [
+    "nuxt-headlessui",
     "@nuxtjs/supabase",
     "@alphanique/ui/nuxt",
     "@nuxt/image-edge",
@@ -17,6 +18,9 @@ export default defineNuxtConfig({
   ],
 
   imports: { dirs: ["store/**"] },
+  headlessui: {
+    prefix: "",
+  },
 
   css: ["~/assets/css/main.css"],
   postcss: {
